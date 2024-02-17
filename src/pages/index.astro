@@ -1,16 +1,34 @@
 ---
-
+import Layout from "@/layouts/base.astro";
+import Button from "@/components/button.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body class="bg-red-500 min-h-screen flex items-center justify-center">
-    <h1 class="text-8xl text-white">Astro</h1>
-  </body>
-</html>
+<Layout>
+  <main class="flex flex-col gap-6">
+    <section class="text-4xl text-center">
+      <div>Ganaste 🎉</div>
+      -
+      <div>Perdiste 😭</div>
+    </section>
+
+    <div>Computadora</div>
+    <section class="flex gap-6">
+      <Button>🪨</Button>
+
+      <Button>🧻</Button>
+
+      <Button>✂️</Button>
+    </section>
+
+    <div class="text-6xl text-center">🆚</div>
+
+    <div>Jugador</div>
+    <section class="flex gap-6">
+      <Button>🪨</Button>
+
+      <Button>🧻</Button>
+
+      <Button>✂️</Button>
+    </section>
+  </main>
+</Layout>
