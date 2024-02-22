@@ -6,29 +6,33 @@ import Button from "@/components/button.astro";
 <Layout>
   <main class="flex flex-col gap-6">
     <section class="text-4xl text-center">
-      <div>Ganaste 🎉</div>
-      -
-      <div>Perdiste 😭</div>
+      <div id="ganaste" class="hidden">Ganaste 🎉</div>
+      <div id="perdiste" class="hidden">Perdiste 😭</div>
+      <div id="empate" class="hidden">Empate 😲</div>
     </section>
 
     <div>Computadora</div>
     <section class="flex gap-6">
-      <Button>🪨</Button>
+      <Button id="cpu-piedra">🪨</Button>
 
-      <Button>🧻</Button>
+      <Button id="cpu-papel">🧻</Button>
 
-      <Button>✂️</Button>
+      <Button id="cpu-tijera">✂️</Button>
     </section>
 
     <div class="text-6xl text-center">🆚</div>
 
     <div>Jugador</div>
     <section class="flex gap-6">
-      <Button>🪨</Button>
+      <Button id="piedra">🪨</Button>
 
-      <Button>🧻</Button>
+      <Button id="papel">🧻</Button>
 
-      <Button>✂️</Button>
+      <Button id="tijera">✂️</Button>
     </section>
   </main>
 </Layout>
+
+<script>
+  import "@/script/game";
+</script>
